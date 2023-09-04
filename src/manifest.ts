@@ -8,7 +8,7 @@ const manifest: Manifest.WebExtensionManifest = {
   version: pkg.version,
   description: 'Helper to download files from 115 using Aria2',
   icons: {
-    '192': 'icon-192.png',
+    '192': 'logo192.png',
   },
   permissions: ['cookies', 'storage', 'notifications'],
   host_permissions: ['*://*.115.com/*'],
@@ -25,12 +25,17 @@ const manifest: Manifest.WebExtensionManifest = {
   ],
   web_accessible_resources: [
     {
-      resources: ['contentStyle.css', 'icon-192.png'],
+      resources: ['contentStyle.css', 'logo192.png'],
       matches: ['*://*.115.com/*'],
     },
   ],
   options_ui: {
     page: 'options.html',
+  },
+  browser_specific_settings: {
+    gecko: {
+      id: 'zluo01@github.com',
+    },
   },
 };
 
