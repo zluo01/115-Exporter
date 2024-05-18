@@ -44,7 +44,7 @@
     "vite": "5.2.11",
     "vite-plugin-css-injected-by-js": "3.5.1",
     "web-ext": "7.11.0",
-    "webextension-polyfill": "0.11.0"
+    "webextension-polyfill": "0.12.0"
   },
   "eslintConfig": {
     "extends": [
